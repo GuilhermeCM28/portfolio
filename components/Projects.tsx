@@ -1,6 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 const projects = [
@@ -25,8 +24,8 @@ export default function Projects() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-violet-600 font-medium text-sm tracking-widest uppercase mb-3">Portfólio</p>
-          <h2 className="text-3xl font-bold text-gray-900 mb-12">Projetos</h2>
+          <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Portfólio</p>
+          <h2 className="text-3xl font-bold text-white mb-12">Projetos</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -36,25 +35,25 @@ export default function Projects() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 + 0.2 }}
-              className="border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-violet-200 transition-all group"
+              className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-violet-500/40 hover:bg-white/[0.07] transition-all"
             >
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-violet-600 transition-colors">
+                <h3 className="text-xl font-semibold text-white group-hover:text-violet-400 transition-colors">
                   {project.title}
                 </h3>
                 <div className="flex gap-3">
-                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-gray-700 transition-colors text-sm">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-slate-500 hover:text-slate-300 transition-colors text-sm">
                     GitHub
                   </a>
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-violet-500 hover:text-violet-700 transition-colors text-sm font-medium">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 transition-colors text-sm font-medium">
                     Demo →
                   </a>
                 </div>
               </div>
-              <p className="text-gray-500 text-sm leading-relaxed mb-4">{project.description}</p>
+              <p className="text-slate-400 text-sm leading-relaxed mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
-                  <span key={tag} className="px-3 py-1 bg-violet-50 text-violet-600 text-xs rounded-full font-medium">
+                  <span key={tag} className="px-3 py-1 bg-violet-500/10 border border-violet-500/20 text-violet-400 text-xs rounded-full font-medium">
                     {tag}
                   </span>
                 ))}
@@ -66,7 +65,7 @@ export default function Projects() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="border border-dashed border-gray-200 rounded-2xl p-6 flex items-center justify-center text-gray-300 text-sm"
+            className="border border-dashed border-white/10 rounded-2xl p-6 flex items-center justify-center text-slate-600 text-sm"
           >
             Mais projetos em breve...
           </motion.div>
