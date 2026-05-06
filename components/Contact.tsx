@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 export default function Contact() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
 
   return (
     <section id="contato" className="py-24 px-6 relative overflow-hidden bg-white dark:bg-[#0a0a0f]">
@@ -12,7 +12,7 @@ export default function Contact() {
       <div className="max-w-5xl mx-auto text-center" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Contato</p>

@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 export default function About() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
 
   return (
     <section id="sobre" className="py-24 px-6 relative bg-white dark:bg-[#0a0a0f]">
@@ -12,7 +12,7 @@ export default function About() {
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center" ref={ref}>
         <motion.div
           initial={{ opacity: 0, x: -30 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -30 }}
           transition={{ duration: 0.6 }}
         >
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Sobre mim</p>
@@ -28,7 +28,7 @@ export default function About() {
         <motion.div
           className="grid grid-cols-2 gap-4"
           initial={{ opacity: 0, x: 30 }}
-          animate={isInView ? { opacity: 1, x: 0 } : {}}
+          animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {[

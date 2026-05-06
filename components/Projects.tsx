@@ -14,14 +14,14 @@ const projects = [
 
 export default function Projects() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
 
   return (
     <section id="projetos" className="py-24 px-6 bg-white dark:bg-[#0a0a0f]">
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Portfólio</p>
@@ -33,7 +33,7 @@ export default function Projects() {
             <motion.div
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.5, delay: i * 0.1 + 0.2 }}
               className="group bg-slate-100 border border-slate-200 rounded-2xl p-6 hover:border-violet-500/40 hover:bg-slate-50 transition-all dark:bg-white/5 dark:border-white/10 dark:hover:border-violet-500/40 dark:hover:bg-white/[0.07]"
             >
@@ -63,7 +63,7 @@ export default function Projects() {
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="border border-dashed border-slate-200 rounded-2xl p-6 flex items-center justify-center text-slate-700 text-sm dark:border-white/10 dark:text-slate-400"
           >

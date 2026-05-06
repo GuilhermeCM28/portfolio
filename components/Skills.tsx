@@ -10,7 +10,7 @@ const skills = [
 
 export default function Skills() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
 
   return (
     <section id="habilidades" className="py-24 px-6 relative bg-white dark:bg-[#0a0a0f]">
@@ -18,7 +18,7 @@ export default function Skills() {
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Tecnologias</p>
@@ -30,7 +30,7 @@ export default function Skills() {
             <motion.div
               key={group.category}
               initial={{ opacity: 0, y: 30 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.5, delay: i * 0.15 + 0.2 }}
               className="bg-slate-100 border border-slate-200 rounded-2xl p-6 hover:border-violet-500/30 transition-colors dark:bg-white/5 dark:border-white/10 dark:hover:border-violet-500/30"
             >
