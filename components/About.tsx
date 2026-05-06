@@ -7,7 +7,7 @@ export default function About() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="sobre" className="py-24 px-6 relative">
+    <section id="sobre" className="py-24 px-6 relative bg-white dark:bg-[#0a0a0f]">
       <div className="absolute inset-0 bg-white/[0.02] -z-10 dark:bg-white/[0.02]" />
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center" ref={ref}>
         <motion.div

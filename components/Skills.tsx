@@ -13,7 +13,7 @@ export default function Skills() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="habilidades" className="py-24 px-6 relative">
+    <section id="habilidades" className="py-24 px-6 relative bg-white dark:bg-[#0a0a0f]">
       <div className="absolute inset-0 bg-white/[0.02] -z-10 dark:bg-white/[0.02]" />
       <div className="max-w-5xl mx-auto" ref={ref}>
         <motion.div

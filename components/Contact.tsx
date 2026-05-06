@@ -7,7 +7,7 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="contato" className="py-24 px-6 relative overflow-hidden">
+    <section id="contato" className="py-24 px-6 relative overflow-hidden bg-white dark:bg-[#0a0a0f]">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-violet-600/10 rounded-full blur-3xl -z-10 dark:bg-violet-600/10" />
       <div className="max-w-5xl mx-auto text-center" ref={ref}>
         <motion.div

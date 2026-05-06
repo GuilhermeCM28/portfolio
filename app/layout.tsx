@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { ThemeProvider } from "next-themes";
+import { Providers } from "./providers";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"] });
@@ -39,9 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preload" href="/fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
       <body className={`${geist.className} bg-white text-slate-900 dark:bg-[#0a0a0f] dark:text-slate-200`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} storageKey="portfolio-theme">
-          {children}
-        </ThemeProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
