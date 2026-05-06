@@ -25,10 +25,10 @@ export default function Contact() {
             <a href="mailto:cm.guilherme28@gmail.com" className="px-6 py-3 bg-violet-600 text-white rounded-xl font-medium hover:bg-violet-500 transition-colors shadow-lg shadow-violet-600/25">
               Enviar e-mail
             </a>
-            <a href="https://www.linkedin.com/in/guilherme-mayer-5101762a7" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-white/10 text-slate-300 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-400 transition-colors">
+            <a href="https://www.linkedin.com/in/guilherme-mayer-5101762a7" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-white/10 text-slate-300 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-400 transition-colors" aria-label="Visitar perfil no LinkedIn">
               LinkedIn
             </a>
-            <a href="https://github.com/GuilhermeCM28" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-white/10 text-slate-300 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-400 transition-colors">
+            <a href="https://github.com/GuilhermeCM28" target="_blank" rel="noopener noreferrer" className="px-6 py-3 border border-white/10 text-slate-300 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-400 transition-colors" aria-label="Visitar perfil no GitHub">
               GitHub
             </a>
           </div>

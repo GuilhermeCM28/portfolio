@@ -18,7 +18,7 @@ export default function About() {
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Sobre mim</p>
           <h2 className="text-3xl font-bold text-white mb-6">Quem sou eu</h2>
           <p className="text-slate-400 leading-relaxed mb-4">
-            Sou desenvolvedor web em início de carreira, apaixonado por criar soluções que resolvem problemas reais. Tenho experiência com JavaScript, TypeScript, React e Next.js, e estou sempre aprendendo novas tecnologias.
+            Sou desenvolvedor web em início de carreira, focado em criar soluções que resolvem problemas reais. Tenho experiência com JavaScript, TypeScript, React e Next.js, e estou sempre aprendendo novas tecnologias.
           </p>
           <p className="text-slate-400 leading-relaxed">
             Construo aplicações do zero — desde o design até o deploy — e me interesso tanto pelo frontend quanto pelo backend. Procuro uma oportunidade onde possa crescer, contribuir e aprender com uma equipe experiente.
