@@ -5,7 +5,7 @@ import { useTheme } from "next-themes";
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme, resolvedTheme } = useTheme();
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -14,7 +14,7 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const currentTheme = mounted ? resolvedTheme : "dark";
+  const currentTheme = mounted ? theme : "dark";
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/80 backdrop-blur border-b border-slate-200/20 shadow-lg dark:bg-[#0a0a0f]/90 dark:border-white/5" : "bg-transparent"}`}>
