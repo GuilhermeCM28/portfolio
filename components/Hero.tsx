@@ -34,8 +34,15 @@ export default function Hero() {
           <a href="#projetos" className="px-6 py-3 bg-violet-600 text-white rounded-xl font-medium hover:bg-violet-500 transition-colors shadow-lg shadow-violet-600/25">
             Ver projetos
           </a>
-          <a href="#contato" className="px-6 py-3 border border-white/10 text-slate-300 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-400 transition-colors dark:border-white/10 dark:text-slate-300 dark:hover:border-violet-500/50 dark:hover:text-violet-400">
+          <a href="#contato" className="px-6 py-3 border border-slate-300 text-slate-700 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-500 transition-colors dark:border-white/10 dark:text-slate-300 dark:hover:border-violet-500/50 dark:hover:text-violet-400">
             Entre em contato
+          </a>
+          <a
+            href="/curr%C3%ADculo_Guilherme.pdf"
+            download="Curriculo-Guilherme-Mayer.pdf"
+            className="px-6 py-3 border border-violet-500/40 text-violet-500 rounded-xl font-medium hover:bg-violet-500/10 hover:border-violet-500/70 transition-colors dark:text-violet-400 dark:hover:bg-violet-500/10"
+          >
+            Baixar CV ↓
           </a>
         </div>
       </motion.div>
