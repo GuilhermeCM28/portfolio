@@ -16,11 +16,11 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Contato</p>
-          <h2 className="text-3xl font-bold text-white mb-4 dark:text-white">Vamos conversar?</h2>
-          <p className="text-slate-400 max-w-md mx-auto mb-4 dark:text-slate-400">
+          <h2 className="text-3xl font-bold text-slate-900 mb-4 dark:text-white">Vamos conversar?</h2>
+          <p className="text-slate-700 max-w-md mx-auto mb-4 dark:text-slate-400">
             Estou em busca de oportunidades como desenvolvedor júnior. Se tiver uma vaga ou quiser trocar uma ideia, me chama!
           </p>
-          <p className="text-slate-500 text-sm mb-10 dark:text-slate-500">cm.guilherme28@gmail.com</p>
+          <p className="text-slate-500 text-sm mb-10 dark:text-slate-400">cm.guilherme28@gmail.com</p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="mailto:cm.guilherme28@gmail.com" className="px-6 py-3 bg-violet-600 text-white rounded-xl font-medium hover:bg-violet-500 transition-colors shadow-lg shadow-violet-600/25">
               Enviar e-mail

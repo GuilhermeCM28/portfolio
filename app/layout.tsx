@@ -38,7 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preload" href="/fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
-      <body className={`${geist.className} bg-[#0a0a0f] text-slate-200 dark:bg-[#0a0a0f] dark:text-slate-200`}>
+      <body className={`${geist.className} bg-white text-slate-900 dark:bg-[#0a0a0f] dark:text-slate-200`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
         </ThemeProvider>

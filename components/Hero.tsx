@@ -19,15 +19,15 @@ export default function Hero() {
           Disponível para oportunidades
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 dark:text-white">
+        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 leading-tight mb-6 dark:text-white">
           Guilherme<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400">
             Mayer
           </span>
         </h1>
 
-        <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-lg dark:text-slate-400">
-          Desenvolvedor web focado em construir aplicações modernas, funcionais e com boa experiência para o usuário. Buscando oportunidades como dev júnior — frontend, backend ou fullstack.
+        <p className="text-lg text-slate-700 leading-relaxed mb-10 max-w-lg dark:text-slate-400">
+          Desenvolvedor web focado em construir aplicações modernas, funcionais e com boa experiência para o usuário. Buscando oportunidades como dev júnior frontend, backend ou fullstack.
         </p>
 
         <div className="flex gap-4 flex-wrap">

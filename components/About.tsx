@@ -16,12 +16,12 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Sobre mim</p>
-          <h2 className="text-3xl font-bold text-white mb-6 dark:text-white">Quem sou eu</h2>
-          <p className="text-slate-400 leading-relaxed mb-4 dark:text-slate-400">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6 dark:text-white">Quem sou eu</h2>
+          <p className="text-slate-700 leading-relaxed mb-4 dark:text-slate-400">
             Sou desenvolvedor web em início de carreira, focado em criar soluções que resolvem problemas reais. Tenho experiência com JavaScript, TypeScript, React e Next.js, e estou sempre aprendendo novas tecnologias.
           </p>
-          <p className="text-slate-400 leading-relaxed dark:text-slate-400">
-            Construo aplicações do zero — desde o design até o deploy — e me interesso tanto pelo frontend quanto pelo backend. Procuro uma oportunidade onde possa crescer, contribuir e aprender com uma equipe experiente.
+          <p className="text-slate-700 leading-relaxed dark:text-slate-400">
+            Construo aplicações do zero, desde o design até o deploy e me interesso tanto pelo frontend quanto pelo backend. Procuro uma oportunidade onde possa crescer, contribuir e aprender com uma equipe experiente.
           </p>
         </motion.div>
 
@@ -37,9 +37,9 @@ export default function About() {
             { label: "Stack", value: "JS / TS / React" },
             { label: "Status", value: "Disponível ✓" },
           ].map((item) => (
-            <div key={item.label} className="bg-white/5 border border-white/10 rounded-2xl p-5 hover:border-violet-500/30 transition-colors">
-              <p className="text-xs text-slate-500 uppercase tracking-wider mb-1">{item.label}</p>
-              <p className="font-semibold text-white">{item.value}</p>
+            <div key={item.label} className="bg-slate-100 border border-slate-200 rounded-2xl p-5 hover:border-violet-500/30 transition-colors dark:bg-white/5 dark:border-white/10">
+              <p className="text-xs text-slate-500 uppercase tracking-wider mb-1 dark:text-slate-400">{item.label}</p>
+              <p className="font-semibold text-slate-900 dark:text-white">{item.value}</p>
             </div>
           ))}
         </motion.div>
