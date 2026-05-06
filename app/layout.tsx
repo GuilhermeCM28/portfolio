@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
 const geist = Geist({ subsets: ["latin"] });
@@ -33,11 +34,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
+    <html lang="pt-BR" suppressHydrationWarning>
       <head>
         <link rel="preload" href="/fonts/Geist-Regular.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
       </head>
-      <body className={`${geist.className} bg-[#0a0a0f] text-slate-200`}>{children}</body>
+      <body className={`${geist.className} bg-[#0a0a0f] text-slate-200 dark:bg-[#0a0a0f] dark:text-slate-200`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

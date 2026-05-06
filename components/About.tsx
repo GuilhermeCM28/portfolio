@@ -8,7 +8,7 @@ export default function About() {
 
   return (
     <section id="sobre" className="py-24 px-6 relative">
-      <div className="absolute inset-0 bg-white/[0.02] -z-10" />
+      <div className="absolute inset-0 bg-white/[0.02] -z-10 dark:bg-white/[0.02]" />
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-center" ref={ref}>
         <motion.div
           initial={{ opacity: 0, x: -30 }}
@@ -16,11 +16,11 @@ export default function About() {
           transition={{ duration: 0.6 }}
         >
           <p className="text-violet-400 font-medium text-sm tracking-widest uppercase mb-3">Sobre mim</p>
-          <h2 className="text-3xl font-bold text-white mb-6">Quem sou eu</h2>
-          <p className="text-slate-400 leading-relaxed mb-4">
+          <h2 className="text-3xl font-bold text-white mb-6 dark:text-white">Quem sou eu</h2>
+          <p className="text-slate-400 leading-relaxed mb-4 dark:text-slate-400">
             Sou desenvolvedor web em início de carreira, focado em criar soluções que resolvem problemas reais. Tenho experiência com JavaScript, TypeScript, React e Next.js, e estou sempre aprendendo novas tecnologias.
           </p>
-          <p className="text-slate-400 leading-relaxed">
+          <p className="text-slate-400 leading-relaxed dark:text-slate-400">
             Construo aplicações do zero — desde o design até o deploy — e me interesso tanto pelo frontend quanto pelo backend. Procuro uma oportunidade onde possa crescer, contribuir e aprender com uma equipe experiente.
           </p>
         </motion.div>

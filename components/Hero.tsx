@@ -19,14 +19,14 @@ export default function Hero() {
           Disponível para oportunidades
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
+        <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6 dark:text-white">
           Guilherme<br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-indigo-400">
             Mayer
           </span>
         </h1>
 
-        <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-lg">
+        <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-lg dark:text-slate-400">
           Desenvolvedor web focado em construir aplicações modernas, funcionais e com boa experiência para o usuário. Buscando oportunidades como dev júnior — frontend, backend ou fullstack.
         </p>
 
@@ -34,7 +34,7 @@ export default function Hero() {
           <a href="#projetos" className="px-6 py-3 bg-violet-600 text-white rounded-xl font-medium hover:bg-violet-500 transition-colors shadow-lg shadow-violet-600/25">
             Ver projetos
           </a>
-          <a href="#contato" className="px-6 py-3 border border-white/10 text-slate-300 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-400 transition-colors">
+          <a href="#contato" className="px-6 py-3 border border-white/10 text-slate-300 rounded-xl font-medium hover:border-violet-500/50 hover:text-violet-400 transition-colors dark:border-white/10 dark:text-slate-300 dark:hover:border-violet-500/50 dark:hover:text-violet-400">
             Entre em contato
           </a>
         </div>
