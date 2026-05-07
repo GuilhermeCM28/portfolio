@@ -9,6 +9,7 @@ const projects = [
     tags: ["Next.js", "TypeScript", "Claude AI", "Supabase"],
     link: "https://study-snap-weld.vercel.app",
     github: "https://github.com/GuilhermeCM28/StudySnap",
+    image: "/studysnap-preview.png",
   },
 ];
 
@@ -35,8 +36,19 @@ export default function Projects() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.5, delay: i * 0.1 + 0.2 }}
-              className="group bg-slate-100 border border-slate-200 rounded-2xl p-6 hover:border-violet-500/40 hover:bg-slate-50 transition-all dark:bg-white/5 dark:border-white/10 dark:hover:border-violet-500/40 dark:hover:bg-white/[0.07]"
+              className="group bg-slate-100 border border-slate-200 rounded-2xl overflow-hidden hover:border-violet-500/40 hover:bg-slate-50 transition-all dark:bg-white/5 dark:border-white/10 dark:hover:border-violet-500/40 dark:hover:bg-white/[0.07]"
             >
+              {project.image && (
+                <div className="relative w-full h-48 overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={`Preview do projeto ${project.title}`}
+                    className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-100/80 to-transparent dark:from-[#0a0a0f]/80" />
+                </div>
+              )}
+              <div className="p-6">
               <div className="flex items-start justify-between mb-4">
                 <h3 className="text-xl font-semibold text-slate-900 group-hover:text-violet-500 transition-colors dark:text-white dark:group-hover:text-violet-400">
                   {project.title}
@@ -57,6 +69,7 @@ export default function Projects() {
                     {tag}
                   </span>
                 ))}
+              </div>
               </div>
             </motion.div>
           ))}
