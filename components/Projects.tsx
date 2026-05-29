@@ -4,6 +4,14 @@ import { useRef } from "react";
 
 const projects = [
   {
+    title: "Meridian",
+    description: "Plataforma inteligente de gestão financeira pessoal. Permite o controle completo de receitas, gastos, investimentos, metas e assinaturas, além de contar com um assistente financeiro integrado com IA que fornece dicas e insights personalizados baseados nos hábitos de consumo.",
+    tags: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "AI Integration"],
+    link: "https://meridian-seven-jade.vercel.app/",
+    github: "https://github.com/GuilhermeCM28/MERIDIAN",
+    image: "/meridian-preview.png",
+  },
+  {
     title: "StudySnap",
     description: "Aplicação que gera flashcards de estudo automaticamente usando IA. O usuário cola um texto e recebe perguntas e respostas para revisar o conteúdo.",
     tags: ["Next.js", "TypeScript", "Claude AI", "Supabase"],
